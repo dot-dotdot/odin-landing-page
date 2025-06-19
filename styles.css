@@ -14,7 +14,8 @@ body {
 }
 
 .header,
-.hero {
+.hero,
+.information {
     display: flex;
     width: 80%;
     margin: auto;
@@ -93,4 +94,48 @@ button {
 button:hover {
     color: #1a5ecd;
     background-color: #f9faf8;
+}
+
+.information {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.information-heading > h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    gap: 42px;
+    justify-content: center;
+}
+
+.cards .item {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.cards > .item > img {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 15px;
+    border: 4px #3882f6 solid;
+}
+
+.cards > .item > p {
+    text-align: center;
+    margin: 8px 0;
+    color: #1f2937;
 }
