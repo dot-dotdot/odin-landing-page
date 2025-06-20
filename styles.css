@@ -182,8 +182,8 @@ cite {
 }
 
 .call-to-action {
+    box-sizing: border-box;
     background-color: #3882f6;
-    width: 70%;
     padding: 24px 60px;
     align-items: center;
     border-radius: 0.5em;
@@ -193,6 +193,15 @@ cite {
     box-sizing: border-box;
     flex: 1 1 auto;
     color: #e5e7eb;
+}
+
+.text > h2 {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.text > p {
+    margin-top: 4px;
 }
 
 .call-to-action .button {
